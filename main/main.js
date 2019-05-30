@@ -13,7 +13,7 @@ module.exports = function main(str) {
     map.set('9', "._.|_|..|");
     var result =new Array();
     for (var i = 0; i < str.length; i++) {
-        m.forEach(function (value,key,map) {
+        map.forEach(function (value,key,map) {
             if(str.charAt(i)==key)
                 result.push(value);
         })
